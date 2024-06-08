@@ -17,7 +17,6 @@ body {
 }
 
 .header,
-.side-bar,
 .main {
   border: 1px solid red;
 }
@@ -49,6 +48,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 45px;
 }
 
 .dashboard h2 {
@@ -56,4 +56,27 @@ body {
     font-size: 30px;
     padding-left: 15px;
     margin: 0;
+}
+nav ul {
+    padding: 0;
+}
+.side-bar nav ul li img {
+    width: 8%;
+}
+nav ul li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 4px;
+    padding-left: 25px;
 }
