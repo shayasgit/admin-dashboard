@@ -1,74 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard | The Odin Project</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <header class="header">
-            Header 
-        </header>
-        <aside class="side-bar">
-            <div class="dashboard">
-                <img src="/icons/view-dashboard.svg" alt="Dashboard Icon">
-                <h2>Dashboard</h2>
+      <header class="header">
+        <div class="search-div">
+            <div class="search-form">
+                <div class="image">
+                  <img src="/icons/magnify.svg" alt="search-icon" />
+                </div>
+                <form action="">
+                  <input type="search" name="search" id="search" />
+                </form>
             </div>
-            <nav class="nav-top">
-                <ul>
-                    <li>
-                        <img src="/icons/home.svg" alt="Home icon">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <img src="/icons/profile.svg" alt="profile-icon">
-                        <a href="#">Profile</a>
-                    </li>
-                    <li>
-                        <img src="/icons/message-reply.svg" alt="Message-icon">
-                        <a href="#">Message</a>
-                    </li>
-                    <li>
-                        <img src="/icons/history.svg" alt="history-icon">
-                        <a href="#">History</a>
-                    </li>
-                    <li>
-                        <img src="/icons/task.svg" alt="task-icon">
-                        <a href="#">Task</a>
-                    </li>
-                    <li>
-                        <img src="/icons/communities.svg" alt="communities">
-                        <a href="#">communities</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="nav-bottom">
-                <ul>
-                    <li>
-                        <img src="/icons/settings.svg" alt="settings-icon">
-                        <a href="#">Settings</a>
-                    </li>
-                    <li>
-                        <img src="/icons/support.svg" alt="support-icon">
-                        <a href="#">Support</a>
-                    </li>
-                    <li>
-                        <img src="/icons/privacy.svg" alt="privacy-icon">
-                        <a href="#">Privacy</a>
-                    </li>
-                </ul>
-            </nav>
-        </aside>
-        <main class="main">
-            <div class="projects">
-                <h2>Projects</h2>
+          <div class="logo">
+              <div id="image">
+                <img src="/icons/bell-outline.svg" alt="bell-icon">
+              </div>
+            <div class="img">
+              <img src="/images/cat.jpeg" alt="Cat Avatar" />
             </div>
-            <div class="notifications">
+            <div class="text">
+              <h4>Hi there,</h4>
+              <p>Morgen Oakley (@morgen)</p>
+            </div>
+          </div>
+        </div>
 
+        <div class="nav-div">
+          <div class="logo">
+            <div class="img">
+              <img src="/images/cat.jpeg" alt="Cat Avatar" />
             </div>
-        </main>
+            <div class="text">
+              <h4>Hi there,</h4>
+              <p>Morgen Oakley (@morgen)</p>
+            </div>
+          </div>
+          <nav>
+            <ul>
+              <li><button>New</button></li>
+              <li><button>Upload</button></li>
+              <li><button>Share</button></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <aside class="side-bar">
+        <div class="dashboard">
+          <img src="/icons/view-dashboard.svg" alt="Dashboard Icon" />
+          <h2>Dashboard</h2>
+        </div>
+        <nav class="nav-top">
+          <ul>
+            <li>
+              <img src="/icons/home.svg" alt="Home icon" />
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <img src="/icons/profile.svg" alt="profile-icon" />
+              <a href="#">Profile</a>
+            </li>
+            <li>
+              <img src="/icons/message-reply.svg" alt="Message-icon" />
+              <a href="#">Message</a>
+            </li>
+            <li>
+              <img src="/icons/history.svg" alt="history-icon" />
+              <a href="#">History</a>
+            </li>
+            <li>
+              <img src="/icons/task.svg" alt="task-icon" />
+              <a href="#">Task</a>
+            </li>
+            <li>
+              <img src="/icons/communities.svg" alt="communities" />
+              <a href="#">communities</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav-bottom">
+          <ul>
+            <li>
+              <img src="/icons/settings.svg" alt="settings-icon" />
+              <a href="#">Settings</a>
+            </li>
+            <li>
+              <img src="/icons/support.svg" alt="support-icon" />
+              <a href="#">Support</a>
+            </li>
+            <li>
+              <img src="/icons/privacy.svg" alt="privacy-icon" />
+              <a href="#">Privacy</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- Main Section  -->
+      <main class="main">
+        <div class="projects">
+          <h2>Your Projects</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Super Cool Project</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+                corporis tempora error iste reprehenderit necessitatibus, 
+              </p>
+              <div class="icons">
+                <img
+                  src="/icons/star-plus-outline.svg"
+                  alt="star-plus-outline"
+                />
+                <img src="/icons/eye-plus-outline.svg" alt="eye-plus-outline" />
+                <img src="/icons/source-fork.svg" alt="source-fork" />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Less Cool Projects</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+                corporis tempora error iste reprehenderit necessitatibus, nihil
+                ipsum earum praesentium cupiditate veniam atque maiores
+              </p>
+              <div class="icons">
+                <img
+                  src="/icons/star-plus-outline.svg"
+                  alt="star-plus-outline"
+                />
+                <img src="/icons/eye-plus-outline.svg" alt="eye-plus-outline" />
+                <img src="/icons/source-fork.svg" alt="source-fork" />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Impossible App</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum
+                pariatur officia labore quo, beatae nulla illum soluta nesciunt
+                eaque dolor voluptatem similique numquam perspiciatis,
+              </p>
+              <div class="icons">
+                <img
+                  src="/icons/star-plus-outline.svg"
+                  alt="star-plus-outline"
+                />
+                <img src="/icons/eye-plus-outline.svg" alt="eye-plus-outline" />
+                <img src="/icons/source-fork.svg" alt="source-fork" />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Easy Peasy App</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente in inventore id distinctio earum possimus deleniti.
+                Molestiae, quibusdam quaerat doloremque fugiat provident 
+              </p>
+              <div class="icons">
+                <img
+                  src="/icons/star-plus-outline.svg"
+                  alt="star-plus-outline"
+                />
+                <img src="/icons/eye-plus-outline.svg" alt="eye-plus-outline" />
+                <img src="/icons/source-fork.svg" alt="source-fork" />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Ad Blocker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                tempore atque perferendis laboriosam at sapiente molestias?
+                Ullam totam nesciunt, reprehenderit ipsam.
+              </p>
+              <div class="icons">
+                <img
+                  src="/icons/star-plus-outline.svg"
+                  alt="star-plus-outline"
+                />
+                <img src="/icons/eye-plus-outline.svg" alt="eye-plus-outline" />
+                <img src="/icons/source-fork.svg" alt="source-fork" />
+              </div>
+            </div>
+            <div class="card">
+              <h3>Money Maker</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates, harum similique possimus illum omnis iure sit nulla
+                esse quia, et voluptatem at cumque, doloribus eos atque.
+              </p>
+              <div class="icons">
+                <img
+                  src="/icons/star-plus-outline.svg"
+                  alt="star-plus-outline"
+                />
+                <img src="/icons/eye-plus-outline.svg" alt="eye-plus-outline" />
+                <img src="/icons/source-fork.svg" alt="source-fork" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="notifications">
+          <div class="announcements">
+            <h2>Announcements</h2>
+            <div class="announcements-card">
+              <h3>Site Maintance</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+                suscipit exercitationem placeat nisi quae culpa aliqu.
+              </p>
+              <hr />
+              <h3>Community Share Day</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <hr />
+              <h3>Update Share Policy</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
+                distinctio corporis modi rerum fuga deserunt maiores.
+              </p>
+            </div>
+          </div>
+          <div class="trending">
+            <h2>Trending</h2>
+            <div class="trending-card">
+              <div class="content">
+                <div class="img">
+                  <img src="/images/cat.jpeg" alt="Cat Avatar" />
+                </div>
+                <div class="text">
+                  <h4>@tegan</h4>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="img">
+                  <img src="/images/cat.jpeg" alt="Cat Avatar" />
+                </div>
+                <div class="text">
+                  <h4>@tegan</h4>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="img">
+                  <img src="/images/cat.jpeg" alt="Cat Avatar" />
+                </div>
+                <div class="text">
+                  <h4>@tegan</h4>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+              <div class="content">
+                <div class="img">
+                  <img src="/images/cat.jpeg" alt="Cat Avatar" />
+                </div>
+                <div class="text">
+                  <h4>@tegan</h4>
+                  <p>World Peace Builder</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>

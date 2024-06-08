@@ -16,19 +16,89 @@ body {
   height: 100vh;
 }
 
-.header,
-.main {
-  border: 1px solid red;
-}
-
 /* header */
 
 .header {
   grid-column: 2 / 3;
   grid-row: 1;
   background-color: #fff;
+  padding: 0px 50px;
+  padding-top: 15px;
 }
 
+.header .nav-div, .header .search-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .search-div .logo {
+  justify-content: flex-end;
+}
+
+.header .nav-div nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+header .image img {
+  width: 20px;
+}
+header #image {
+  width: 20px;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+.header h4, .header p {
+  margin: 0;
+}
+.header .logo .img {
+  width: 12%;
+  height: auto;
+}
+
+.header .logo img {
+  width: 100%;
+  height: auto;
+}
+
+.header button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.search-form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+}
+
+.search-form .image{
+  flex: 1;
+  height: 20px;
+}
+.search-form form {
+  flex: 3;
+}
+form input {
+  width: 600px;
+  border-radius: 15px;
+  height: 1.5rem;
+  font-size: 1rem;
+  padding: 10px;
+  background-color: #ccc;
+}
 /* Side-bar */
 
 .side-bar {
@@ -45,44 +115,44 @@ body {
 }
 
 .side-bar img {
-    width: 10%;
+  width: 10%;
 }
 
-.dashboard{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 30px;
+.dashboard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .dashboard h2 {
-    color: #ffffff;
-    font-size: 25px;
-    padding-left: 15px;
-    margin: 0;
+  color: #ffffff;
+  font-size: 25px;
+  padding-left: 15px;
+  margin: 0;
 }
 nav ul {
-    padding: 0;
+  padding: 0;
 }
 .side-bar nav ul li img {
-    width: 7%;
+  width: 7%;
 }
-nav ul li{
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 4px;
-    margin-bottom: 15px;
+nav ul li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 4px;
+  margin-bottom: 15px;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1rem;
-    margin-top: 4px;
-    padding-left: 25px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 4px;
+  padding-left: 25px;
 }
 
 .nav-bottom {
@@ -93,9 +163,102 @@ nav ul li a {
 
 .main {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 3fr 1fr;
+  padding: 15px;
+  gap: 15px;
 }
 
-.projects, .notifications {
-  border: 2px solid green;
+.main h2 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+.cards h3 {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.cards p {
+  font-size: 0.85rem;
+}
+.card {
+  background-color: #fff;
+  padding: 0px 15px;
+  border-radius: 10px;
+  border-left: 10px solid goldenrod;
+  display: grid;
+}
+.icons img {
+  width: 20px;
+}
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 15px 0px;
+  align-self: flex-end;
+}
+.notifications {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+}
+
+.announcements-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+.announcements-card h3 {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.announcements-card p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.trending-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.trending .img {
+  width: 16%;
+  height: auto;
+}
+
+.trending img {
+  width: 100%;
+  height: auto;
+}
+
+.trending-card .content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.trending-card .content + .content {
+  margin-top: 3px;
+}
+
+.trending-card h4,
+.trending-card p {
+  margin: 0;
+}
+
+.trending-card h4 {
+  font-size: 1rem;
+}
+.trending-card p {
+  font-size: 0.75rem;
 }
