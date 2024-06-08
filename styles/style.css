@@ -21,11 +21,15 @@ body {
   border: 1px solid red;
 }
 
+/* header */
+
 .header {
   grid-column: 2 / 3;
   grid-row: 1;
   background-color: #fff;
 }
+
+/* Side-bar */
 
 .side-bar {
   grid-column: 1;
@@ -80,3 +84,9 @@ nav ul li a {
     margin-top: 4px;
     padding-left: 25px;
 }
+
+.nav-bottom {
+  margin-top: 50px;
+}
+
+/* Main */
