@@ -9,7 +9,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 5fr;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -45,19 +45,19 @@ body {
 }
 
 .side-bar img {
-    width: 15%;
+    width: 10%;
 }
 
 .dashboard{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .dashboard h2 {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 15px;
     margin: 0;
 }
@@ -65,14 +65,14 @@ nav ul {
     padding: 0;
 }
 .side-bar nav ul li img {
-    width: 8%;
+    width: 7%;
 }
 nav ul li{
     list-style: none;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 10px;
+    padding-left: 4px;
     margin-bottom: 15px;
 }
 
@@ -80,13 +80,22 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 4px;
     padding-left: 25px;
 }
 
 .nav-bottom {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 /* Main */
+
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.projects, .notifications {
+  border: 2px solid green;
+}
